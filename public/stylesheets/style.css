@@ -1,0 +1,59 @@
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  background: #f9f9f9;
+  position: relative;
+  margin: 0;
+  padding-bottom: 6rem;
+}
+
+.container {
+  margin: 0 auto;
+  padding-top: 64px;
+  width: 94%;
+  min-height: 100%;
+}
+
+.heading {
+  padding-top: 50px;
+}
+
+.result {
+  border-bottom:#CCCCCC 1px dotted;
+  padding: 15px;
+}
+
+.result:last-child {
+  border: 0;
+}
+
+h4 {
+  color: #008cba;
+  margin: 0;
+}
+
+p.url {
+  margin: 0;
+  padding: 0;
+  color: green;
+}
+
+p.description {
+  color: #666;
+  margin: 0;
+}
+
+.footer {
+  margin-top: 100px;
+  padding: 1rem;
+  background-color: #efefef;
+  text-align: center;
+}

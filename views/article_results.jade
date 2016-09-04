@@ -1,0 +1,14 @@
+extends layout
+
+block content
+    if articles.length > 0
+        each article, i in articles
+            .result.row
+                a(href=article.url)
+                    h4= article.title
+                p.url= article.url
+                p.description= article.description
+                p.author Author:  #{article.author}
+    else
+        .result.row
+            p.description No result found

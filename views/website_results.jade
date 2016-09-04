@@ -1,0 +1,13 @@
+extends layout
+
+block content
+    if websites.length > 0
+        each website, i in websites
+            .result.row
+                a(href=website.url)
+                    h4= website.title
+                p.url= website.url
+                p.description= website.description
+    else
+        .result.row
+            p.description No result found

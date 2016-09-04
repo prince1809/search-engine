@@ -1,0 +1,30 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/foundation.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    .container
+      .row.heading
+        .large-12.columns
+          a(href='/')
+            h1.text-center Doodle
+      .row
+        .large-12.columns
+          .panel
+            form(action='/search')
+              .row
+                .text-center
+                  input(type='radio',name='type',value='website',checked='')
+                  |  Website &nbsp;
+                  input(type='radio',name='type',value='news')
+                  |  News
+                .large-10.columns
+                  input(type='text',placeholder='Search...',name='q')
+                .large-2.columns
+                  input.button(type='submit', value='Go')
+      block content
+      .footer
+        a(href='/websites/add') Add website | &nbsp;
+        a(href='/articles/add') Add Articles
